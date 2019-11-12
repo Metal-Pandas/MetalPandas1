@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="paymentBackground" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MetalPandas.DarkPayments">
+  <Text fx:id="paymentTitle" layoutX="260.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment" />
+  <GridPane layoutX="30.0" layoutY="62.0" prefHeight="335.0" prefWidth="538.0">
+    <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <Pane fx:id="backdrop" prefHeight="200.0" prefWidth="200.0">
+      <Text fx:id="selectPaymentLabel" layoutX="61.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Payment Option:" />
+      <Text fx:id="tipLabel" layoutX="135.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tip:" />
+      <Text fx:id="totalCostLabel" layoutX="124.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Cost:" />
+      <Button fx:id="addPaymentMethod" layoutX="85.0" layoutY="155.0" mnemonicParsing="false" onAction="#handleAddPaymentAction" text="Add Payment Method" />
+    </Pane>
+    <Pane fx:id="backdrop" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+      <ComboBox fx:id="paymentOption" layoutX="60.0" layoutY="37.0" prefWidth="150.0" />
+      <TextField fx:id="tipAmount" layoutX="60.0" layoutY="84.0" />
+      <TextField fx:id="totalCostAmount" layoutX="60.0" layoutY="124.0" />
+      <Button fx:id="pay" layoutX="175.0" layoutY="155.0" mnemonicParsing="false" onAction="#handlePayAction" text="Pay" />
+         <Button fx:id="backButton" layoutX="243.0" layoutY="294.0" mnemonicParsing="false" onAction="#handleBackAction" text="Back" />
+    </Pane>
+  </GridPane>
+  <stylesheets>
+    <URL value="@darkTheme.css" />
+  </stylesheets>
+</AnchorPane>

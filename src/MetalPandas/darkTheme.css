@@ -1,0 +1,145 @@
+/* GENERAL ACROSS ALL PAGES */
+.button{
+  -fx-text-fill: #82c343;
+  -fx-background-color: #363636;
+  -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.7), 6, 0.0, 0, 1);
+}
+
+#backDrop{
+  -fx-opacity: .5;
+  -fx-background-color: #bdc3c6;
+}
+
+.text{
+
+}
+
+.combo-box{
+
+}
+
+.tool-bar{
+  -fx-background-color: #363636;
+}
+
+.label{
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 6, 0.0, 0, 1);
+}
+
+.text-field{
+  -fx-text-fill: #0c590f;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 6, 0.0, 0, 1);
+}
+
+.password-field{
+  -fx-text-fill: #0c590f;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 6, 0.0, 0, 1);
+}
+
+.choice-box{
+
+}
+
+#drawer{
+ /* -fx-background-image: url("Background/DarkTheme/login.jpg"); */
+}
+
+/* ADD PAYMENTS PAGE */
+#addPaymentBackground{
+  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+}
+
+/* APPOINTMENTS PAGE */
+#appointmentsBackground{
+  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+}
+
+#scheduledPickUps{
+
+}
+
+/* EDIT PAGE */
+#editBackground{
+  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+}
+
+/* FAVOURITES PAGE */
+#favouritesBackground{
+  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+}
+
+#favouritesTable{
+
+}
+
+/* FORGOT EMAIL PAGE */
+#forgotEmailBackground{
+  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+}
+
+#forgotEmailStatus{
+
+}
+
+/* FORGOT PASSWORD PAGE */
+#forgotPasswordBackground{
+  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+}
+
+#forgotPassStatus{
+
+}
+
+#forgotPasswordStatus{
+
+}
+
+/* HOME PAGE */
+#homeBackground{
+  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+}
+
+/* LOGIN PAGE */
+#loginBackground{
+  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+}
+
+#statusText{
+
+}
+
+/* PAYMENTS PAGE */
+#paymentBackground{
+  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+}
+
+#backdrop{
+  -fx-opacity: .5;
+  -fx-background-color: #bdc3c6;
+}
+
+/* PROFILE PAGE */
+#profileBackground{
+  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+}
+
+.toggle-button{
+  -fx-text-fill: #82c343;
+  -fx-background-color: #363636;
+  -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.7), 6, 0.0, 0, 1);
+}
+
+/* RESET PASSWORD PAGE */
+#resetBackground{
+  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+}
+
+/* SCHEDULE PAGE */
+#scheduleBackground{
+  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+}
+
+/* SIGN UP PAGE */
+#signUpBackground{
+  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+}
