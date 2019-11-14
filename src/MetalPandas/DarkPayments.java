@@ -1,6 +1,7 @@
 package MetalPandas;
 
 import java.io.IOException;
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -24,7 +25,7 @@ public class DarkPayments {
   @FXML public Text totalCostLabel;
   @FXML public Button addPaymentMethod;
   @FXML public Pane backDrop;
-  @FXML public ComboBox paymentOption;
+  @FXML public ComboBox<String> paymentOption;
   @FXML public TextField tipAmount;
   @FXML public TextField totalCostAmount;
   @FXML public Button pay;
@@ -52,5 +53,13 @@ public class DarkPayments {
     Stage homeStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
     homeStage.setScene(homePageScene);
     homeStage.show();
+  }
+
+  public void initialize(){
+    try{
+      paymentOption.setItems(FXCollections.observableArrayList("Gift Card", "Debit/Credit"));
+    } catch (Exception e){
+      e.printStackTrace();
+    }
   }
 }

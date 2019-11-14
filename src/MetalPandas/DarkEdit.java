@@ -3,6 +3,7 @@ package MetalPandas;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import javafx.collections.FXCollections;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -41,8 +42,8 @@ public class DarkEdit {
   @FXML public Pane backDrop;
   @FXML public Label driverPassLabel;
   @FXML public Label genderLabel;
-  @FXML public ChoiceBox driverPassenger;
-  @FXML public ChoiceBox gender;
+  @FXML public ChoiceBox<String> driverPassenger;
+  @FXML public ChoiceBox<String> gender;
   @FXML public Button update;
 
 
@@ -83,5 +84,14 @@ public class DarkEdit {
     Stage homeStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
     homeStage.setScene(homePageScene);
     homeStage.show();
+  }
+
+  public void initialize(){
+    try{
+      driverPassenger.setItems(FXCollections.observableArrayList("Driver", "Passenger"));
+      gender.setItems(FXCollections.observableArrayList("Female", "Male", "Non-binary", "Metal Panda"));
+    } catch (Exception e){
+      e.printStackTrace();
+    }
   }
 }

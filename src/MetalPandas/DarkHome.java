@@ -14,7 +14,6 @@ import javafx.scene.control.ToolBar;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import javafx.scene.text.Text;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
@@ -31,7 +30,6 @@ public class DarkHome {
   @FXML public Button profileButton;
   @FXML public Button favouritesButton;
   @FXML public Button logoutButton;
-  @FXML public Text mapLabel;
   @FXML public Button scheduleButton;
 
 

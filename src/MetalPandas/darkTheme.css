@@ -6,15 +6,20 @@
 }
 
 #backDrop{
-  -fx-opacity: .5;
+  -fx-opacity: .9;
   -fx-background-color: #bdc3c6;
+}
+.text-field{
+  -fx-text-fill: #0c590f;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 6, 0.0, 0, 1);
 }
 
 .text{
-
+  -fx-text-fill: #000000;
 }
 
 .combo-box{
+  -fx-text-fill: #000000;
 
 }
 
@@ -23,14 +28,10 @@
 }
 
 .label{
-
-  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 6, 0.0, 0, 1);
+  -fx-text-fill: #000000;
+  -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.7), 6, 0.0, 0, 1);
 }
 
-.text-field{
-  -fx-text-fill: #0c590f;
-  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 6, 0.0, 0, 1);
-}
 
 .password-field{
   -fx-text-fill: #0c590f;
@@ -38,7 +39,7 @@
 }
 
 .choice-box{
-
+  -fx-background-color: #787878;
 }
 
 #drawer{
@@ -47,12 +48,12 @@
 
 /* ADD PAYMENTS PAGE */
 #addPaymentBackground{
-  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+  -fx-background-image: url("Background/DarkTheme/testback2.jpg");
 }
 
 /* APPOINTMENTS PAGE */
 #appointmentsBackground{
-  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+  -fx-background-image: url("Background/DarkTheme/testback2.jpg");
 }
 
 #scheduledPickUps{
@@ -61,12 +62,20 @@
 
 /* EDIT PAGE */
 #editBackground{
-  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+  -fx-background-image: url("Background/DarkTheme/backgroundDark.jpg");
+}
+
+#driverPassenger{
+  -fx-text-fill: #82c343;
+}
+
+#gender{
+  -fx-text-fill: #82c343;
 }
 
 /* FAVOURITES PAGE */
 #favouritesBackground{
-  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+  -fx-background-image: url("Background/DarkTheme/testback2.jpg");
 }
 
 #favouritesTable{
@@ -75,7 +84,7 @@
 
 /* FORGOT EMAIL PAGE */
 #forgotEmailBackground{
-  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+  -fx-background-image: url("Background/DarkTheme/testback2.jpg");
 }
 
 #forgotEmailStatus{
@@ -84,7 +93,7 @@
 
 /* FORGOT PASSWORD PAGE */
 #forgotPasswordBackground{
-  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+  -fx-background-image: url("Background/DarkTheme/testback2.jpg");
 }
 
 #forgotPassStatus{
@@ -97,12 +106,12 @@
 
 /* HOME PAGE */
 #homeBackground{
-  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+  -fx-background-image: url("Background/DarkTheme/testback2.jpg");
 }
 
 /* LOGIN PAGE */
 #loginBackground{
-  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+  -fx-background-image: url("Background/DarkTheme/backgroundDark.jpg");
 }
 
 #statusText{
@@ -111,17 +120,17 @@
 
 /* PAYMENTS PAGE */
 #paymentBackground{
-  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+  -fx-background-image: url("Background/DarkTheme/testback2.jpg");
 }
 
 #backdrop{
-  -fx-opacity: .5;
+  -fx-opacity: .9;
   -fx-background-color: #bdc3c6;
 }
 
 /* PROFILE PAGE */
 #profileBackground{
-  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+  -fx-background-image: url("Background/DarkTheme/backgroundDark.jpg");
 }
 
 .toggle-button{
@@ -132,15 +141,15 @@
 
 /* RESET PASSWORD PAGE */
 #resetBackground{
-  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+  -fx-background-image: url("Background/DarkTheme/testback2.jpg");
 }
 
 /* SCHEDULE PAGE */
 #scheduleBackground{
-  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+  -fx-background-image: url("Background/DarkTheme/testback2.jpg");
 }
 
 /* SIGN UP PAGE */
 #signUpBackground{
-  -fx-background-image: url("Background/DarkTheme/darkTheme.jpg");
+  -fx-background-image: url("Background/DarkTheme/backgroundDark.jpg");
 }

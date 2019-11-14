@@ -3,6 +3,7 @@ package MetalPandas;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import javafx.collections.FXCollections;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -39,14 +40,14 @@ public class DarkSignUp {
   @FXML public TextField country;
   @FXML public PasswordField password;
   @FXML public PasswordField reenterPassword;
-  @FXML public ComboBox month;
-  @FXML public ComboBox day;
+  @FXML public ComboBox<String> month;
+  @FXML public ComboBox<Integer> day;
   @FXML public TextField year;
   @FXML public Pane backDrop;
   @FXML public Label passDriveLabel;
   @FXML public Label genderLabel;
-  @FXML public ChoiceBox driverPassenger;
-  @FXML public ChoiceBox gender;
+  @FXML public ChoiceBox<String> driverPassenger;
+  @FXML public ChoiceBox<String> gender;
   @FXML public Button signUP;
 
   public void handleEditAction(ActionEvent actionEvent) {
@@ -86,6 +87,17 @@ public class DarkSignUp {
     Stage homeStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
     homeStage.setScene(homePageScene);
     homeStage.show();
+  }
+
+  public void initialize(){
+    try{
+      month.setItems(FXCollections.observableArrayList("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"));
+      day.setItems(FXCollections.observableArrayList(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31));
+      driverPassenger.setItems(FXCollections.observableArrayList("Driver", "Passenger"));
+      gender.setItems(FXCollections.observableArrayList("Female", "Male", "Non-binary", "Metal Panda"));
+    } catch (Exception e){
+      e.printStackTrace();
+    }
   }
 
 }
