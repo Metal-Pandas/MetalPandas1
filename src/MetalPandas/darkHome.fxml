@@ -33,36 +33,29 @@
           <VBox fx:id="drawer" prefHeight="363.0" prefWidth="190.0">
             <GridPane prefHeight="160.0" prefWidth="195.0">
               <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
               </columnConstraints>
               <rowConstraints>
-                <RowConstraints maxHeight="148.0" minHeight="10.0" prefHeight="140.0"
-                  vgrow="SOMETIMES"/>
-                <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="13.0"
-                  vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="148.0" minHeight="10.0" prefHeight="140.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="13.0" vgrow="SOMETIMES" />
               </rowConstraints>
-              <ImageView fx:id="profileImage" fitHeight="145.0" fitWidth="190.0"
-                pickOnBounds="true" preserveRatio="true">
-                <Image url="@profile_image.jpg"/>
+              <ImageView fx:id="profileImage" fitHeight="145.0" fitWidth="190.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@profile_image.jpg" />
               </ImageView>
             </GridPane>
             <BorderPane prefHeight="206.0" prefWidth="200.0">
               <bottom>
                 <BorderPane prefHeight="38.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                   <top>
-                    <Button fx:id="logoutButton" mnemonicParsing="false"
-                      onAction="#handleLogoutAction" text="Logout" BorderPane.alignment="CENTER"/>
+                    <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#handleLogoutAction" text="Logout" BorderPane.alignment="CENTER" />
                   </top>
                 </BorderPane>
               </bottom>
               <top>
-                <Button fx:id="profileButton" mnemonicParsing="false"
-                  onAction="#handleProfileAction" text="Profile" BorderPane.alignment="CENTER"/>
+                <Button fx:id="profileButton" mnemonicParsing="false" onAction="#handleProfileAction" text="Profile" BorderPane.alignment="CENTER" />
               </top>
               <center>
-                <Button fx:id="favouritesButton" mnemonicParsing="false"
-                  onAction="#handleFavouritesAction" text="Favourites"
-                  BorderPane.alignment="CENTER"/>
+                <Button fx:id="favouritesButton" mnemonicParsing="false" onAction="#handleFavouritesAction" text="Favourites" BorderPane.alignment="CENTER" />
               </center>
             </BorderPane>
           </VBox>

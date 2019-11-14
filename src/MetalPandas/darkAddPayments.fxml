@@ -10,12 +10,9 @@
 
 <AnchorPane fx:id="addPaymentBackground" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MetalPandas.DarkAddPayments">
   <Pane fx:id="backDrop" layoutX="115.0" layoutY="74.0" prefHeight="172.0" prefWidth="295.0">
-    <Text fx:id="expirationLabel" layoutX="14.0" layoutY="154.0" strokeType="OUTSIDE"
-      strokeWidth="0.0" text="Expiration Date:"/>
-    <ComboBox fx:id="expirationMonth" layoutX="117.0" layoutY="137.0" prefHeight="25.0"
-      prefWidth="83.0" promptText="Month"/>
-    <TextField fx:id="expirationYear" layoutX="205.0" layoutY="137.0" prefHeight="25.0"
-      prefWidth="59.0" promptText="YY"/>
+    <Text fx:id="expirationLabel" layoutX="14.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expiration Date:" />
+    <ComboBox fx:id="expirationMonth" layoutX="117.0" layoutY="137.0" prefHeight="25.0" prefWidth="83.0" promptText="Month" />
+    <TextField fx:id="expirationYear" layoutX="205.0" layoutY="137.0" prefHeight="25.0" prefWidth="59.0" promptText="YY" />
   </Pane>
    <Text fx:id="addPaymentTitle" layoutX="204.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add A Payment Method" />
    <Text fx:id="paymentType" layoutX="130.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment type:" />
